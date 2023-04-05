@@ -1,27 +1,33 @@
+/* CSS Code */
+/* Heading */
+
 * {
     font-family: 'Roboto', 'sans-serif';
     font-weight: bold;
     font-style: italic;
 }
 
-body {
-    padding: 0em;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    row-gap: 1.5em;
-    color: #fff;
-}
-
-.top{
+.top {
     display: flex;
     justify-content: space-between;
     align-items: center;
     width: 100%;
 }
 
-.blue{
+.side {
+    display: inline-block;
+    width: 50%;
+    text-align: center;
+    /* padding-right: 2em; */
+}
+
+.text {
+    color: #000;
+    margin: 1em;
+    font-size: 2.5em;
+}
+
+.blue {
     background-color: #0248d2;
     color: #fff;
     width: 100%;
@@ -30,22 +36,41 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    row-gap: 2em;
     border: 0px;
     border-bottom-right-radius: 40%;
 }
 
-.header{
-    border: 2px solid #fff;
-    border-radius: 30px;
-    padding: 0.4em 1em;
-    font-size: 1.8em;
+.white {
+    background-color: #fff;
+    color: #000;
+    width: 95%;
+    padding: 1em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
-.message, .center {
-    text-align: center;
-    width: 100%;
-    height: 2em;
+h1 {
+    color: #fff;
+    margin: 0em;
 }
+
+/* 3*3 Grid */
+.input {
+    width: 3em;
+    height: 3em;
+    margin: 0.5em;
+    background-color: #dadada;
+    color: #000;
+    border: 0px;
+    text-align: center;
+    font-size: 2em;
+    font-style: normal;
+}
+
+/* Reset Button */
 
 .button {
     background-color: #fff;
@@ -59,58 +84,65 @@ body {
     font-size: 1em;
     margin-bottom: 1em;
 }
-.side{
-    color: #000;
-    display: inline-block;
-    width: 50%;
-    text-align: center;
-    /* padding-right: 2em; */
-}
 
-.text{
-    font-size: 3em;
-}
+/* Player turn space */
 
-.white{
-    background-color: #fff;
-    color: #000;
-    width: 95%;
-    padding: 1em;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-
-.container{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    row-gap: 1em;
-    padding: 1em;
-    border: 2px dashed #0248d2;
-}
-
-row{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    column-gap: 1em;
-}
-
-/* input{
-    display: none;
-} */
-
-label{
-    width: 5em;
-    height: 5em;
+.result {
+    width: 22em;
+    height: 1em;
+    padding: 2.5em 1em;
+    border: 0px;
+    border-radius: 20px;
     background-color: #dadada;
     color: #000;
+    border: 0px;
+    text-align: center;
+    margin-top: 4em;
+}
+
+/* Main Container */
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    row-gap: 3em;
+}
+
+.black {
+    color: #000;
+    margin: 0em 0em 1em 0em;
+}
+
+.border {
+    border: 2px dashed #0248d2;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.main .white .border row {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Game Instruction Text */
+.instructions {
+    color: #fff;
+    text-align: center;
+    width: 100%;
+}
+
+.center {
+    text-align: center;
+    width: 100%;
+    height: 2em;
 }
 
 hr {
-    width: 70%;
+    width: 80%;
     border: 1px solid #000;
 }
