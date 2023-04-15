@@ -1,3 +1,11 @@
+//audio function
+
+function audio(){
+
+    document.getElementById('audio').play()
+
+}
+
 // Function called whenever user tab on any box
 function myfunc() {
 
